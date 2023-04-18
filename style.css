@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  max-height: 100vh;
+  box-sizing: border-box;
+  overflow: -webkit-hidden-unscrollable;
+}
+
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("https://fonts.google.com/specimen/Kumbh+Sans");
+  font-weight: 400;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  color: hsl(0, 2%, 24%);
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.bg-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -5%;
+  margin-top: -20%;
+  width: 50%;
+}
+
+.bg-btm {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  margin-right: -5%;
+  margin-bottom: -20%;
+}
+
+.card {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: absolute;
+  top: 30%;
+  padding-bottom: 20px;
+}
+
+.card-bg {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.hero {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  border: 5px solid white;
+}
+
+.info {
+  margin-top: 20%;
+  margin-bottom: 7%;
+}
+
+.flex1 {
+  z-index: 1;
+  place-items: center;
+}
+
+.reactions {
+  z-index: 2;
+  padding-left: 45px;
+  padding-right: 45px;
+  width: 100%;
+  border-top: 1px solid hsla(0, 0%, 59%, 0.295);
+  display: flex;
+  gap: 3em;
+  margin-bottom: 20px;
+}
+
+.likes,
+.followers,
+.photos {
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 400px) {
+  .bg-top,
+  .bg-btm {
+    width: 100%;
+  }
+
+  .bg-top {
+    margin-top: -40%;
+    margin-left: -40%;
+  }
+
+  .bg-btm {
+    margin-right: -40%;
+    margin-bottom: -40%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
